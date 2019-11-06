@@ -1,0 +1,7 @@
+[
+    {"name":"列表1","isNow":true},
+    {"name":"列表2","isNow":false},
+    {"name":"列表3","isNow":false},
+    {"name":"列表4","isNow":false},
+    {"name":"列表5","isNow":false}
+  ]
