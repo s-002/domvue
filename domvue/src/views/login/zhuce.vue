@@ -21,13 +21,6 @@ export default {
         userPwd:''
     }
   },
-
-  components: {},
-
-  computed: {},
-
-  mounted: {},
-
   methods: {
       async register(){
           let {userName,userPwd}=this

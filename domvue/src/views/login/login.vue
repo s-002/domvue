@@ -29,13 +29,6 @@ export default {
         userPwd:''
     }
   },
-
-  components: {},
-
-  computed: {},
-
-  mounted: {},
-
   methods: {
       async login(){
           let {userName,userPwd}=this

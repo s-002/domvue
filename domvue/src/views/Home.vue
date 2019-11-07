@@ -1,16 +1,7 @@
 <template>
   <div class="home">
-   
+   32r
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
 
-
-export default {
-  name: 'home',
-  components: {
-  }
-}
-</script>

@@ -5,7 +5,7 @@ import Home from '../views/home/index.vue'
 import Login from '../views/login/login.vue'
 import Register from '../views/login/zhuce.vue'
 import Timeline from '../views/home/timeline'
-import My from '../views/home/my'
+import My from '../views/home/my.vue'
 
 Vue.use(VueRouter)
 
