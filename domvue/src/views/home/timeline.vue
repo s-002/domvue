@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="Tmain">
-                  dynamicContent                   
+                  dynamicContent文案                 
                   <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
                     <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
                 </div>
