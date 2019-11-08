@@ -30,12 +30,26 @@
 </template>
 
 <script>
+import {mapState,mapActions} from 'vuex'
 export default {
   data () {
     return {
 
     }
-  }
+  },
+ computed: {
+     ...mapState({
+         list:state=>state.timeline.list
+     })
+ },
+ methods:{
+     ...mapActions({
+         getTimeline:'timeline/getTimeline'
+     })
+ },
+ created(){
+     this.getTimeline();
+ }
 }
 
 </script>
