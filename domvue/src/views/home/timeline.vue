@@ -5,36 +5,40 @@
             <input type="text" name="" id="" placeholder="试试搜索你的好友名字">
         </div>
         <div class="center">
-            <li class="cont">
+            <li class="cont" v-for="item in list" :key="item.dynamicid">
                 <div class="Ttop">
                     <img src="../../assets/1.jpg" alt="" class="img">
                     <div class="name">
-                        <p>userName</p>
+                        <p>{{item.userName}}</p>
                         <p>2019-06-01</p>
                     </div>
                 </div>
                 <div class="Tmain">
-                  dynamicContent文案                 
+                 {{item.dynamicContent}}                 
                   <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
                     <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
                 </div>
                 <div class="Tfooter">
                     <p class="action">
                         <span>点赞</span>
-                        <span>评论1</span>
+                        <span @click="reply(item)">{{`评价${item.comments.length}`}}</span>
                     </p>
                 </div>
+                <Reply :reply="item.comments" />
             </li>
         </div>
+        <reply-modal/>
     </div>
 </template>
 
 <script>
-import {mapState,mapActions} from 'vuex'
+import Reply from '../../components/reply.vue'
+import ReplyModal from '../../components/replyModal'
+import {mapState,mapActions,mapMutations} from 'vuex'
 export default {
   data () {
     return {
-
+     
     }
   },
  computed: {
@@ -45,10 +49,30 @@ export default {
  methods:{
      ...mapActions({
          getTimeline:'timeline/getTimeline'
-     })
+     }),
+     ...mapMutations({
+         showModal:'replyModal/showModal'
+     }),
+      reply(value){
+          this.replyInfo={
+              type:'comment',//判断是要评论朋友圈还是回复朋友圈
+              dynamicid:value.dynamicid,//朋友圈的id
+              content:'',
+              title:`评价：${value.userName}`
+          }
+        //   console.log('reply',this.replyInfo)
+          this.showModal({
+              info:this.replyInfo,
+              show:true
+          })
+      }
  },
  created(){
      this.getTimeline();
+ },
+ components:{
+     Reply,
+     ReplyModal
  }
 }
 

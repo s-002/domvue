@@ -4,8 +4,8 @@
         <div class="toplogin">
             <h3>登录</h3>
         </div>
-        <div class="div">
-            <input type="text" name="" placeholder="用户名" id="" v-model="userName">
+        <div class="div"> 
+            <input type="text" @blur="checkUserName()" placeholder="用户名" id="" v-model="userName">
             <p class="p">
                <input  type="password" name="" id="" placeholder="登录密码" class='ipt' v-model="userPwd">
                <span class="spans" @click="showbtn()">显示</span>
@@ -36,8 +36,11 @@ export default {
           console.log('result...',result)
           if(result&&result.data.code===1){
               //登录成功，执行后续跳转逻辑
+              window.sessionStorage.setItem('isLogin', 'true');
+              this.$router.push('/')
           }
-          alert(result.data.msg)
+        //   alert(result.data.msg)
+          this.$toast(result.data.msg)
       },
       showbtn(){
         this.isShow=!this.isShow
@@ -49,6 +52,11 @@ export default {
             document.querySelector('.ipt').type='password'
             document.querySelector('.spans').innerHTML='显示'
         }
+      },
+      checkUserName(){
+          if(!/\w{3,20}/.test(this.userName)){
+              this.$toast('请输入正确的用户名')
+          }
       }
   }
 }

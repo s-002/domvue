@@ -1,0 +1,135 @@
+{
+    "msg": "获取动态成功",
+    "code": 1,
+    "data": [
+        {
+            "dynamicid": "001d87a0-fa25-11e9-abc0-a3292aa30d64",
+            "uid": "3a366930-f78b-11e9-82f5-cb7496def3fd",
+            "userName": "w916peach",
+            "dynamicContent": "今天心情不好",
+            "userPwd": "916521pp.",
+            "comments": [
+                {
+                    "commentReplyid": "4b2c28f0-fa25-11e9-abc0-a3292aa30d64",
+                    "uid": "13981e90-f70e-11e9-a6ec-6574e7c23858",
+                    "dynamicid": "001d87a0-fa25-11e9-abc0-a3292aa30d64",
+                    "commentContent": "你为什么心情不好？",
+                    "type": "comment",
+                    "userName": "abc",
+                    "userPwd": "123456",
+                    "replys": [
+                        {
+                            "commentReplyid": "1b9edcf0-fa29-11e9-93f8-49bdc5761ec6",
+                            "toCommentReplyid": "4b2c28f0-fa25-11e9-abc0-a3292aa30d64",
+                            "replyContent": "我就是不告诉你",
+                            "uid": "3a366930-f78b-11e9-82f5-cb7496def3fd",
+                            "type": "reply",
+                            "userName": "w916peach",
+                            "userPwd": "916521pp.",
+                            "replys": [
+                                {
+                                    "commentReplyid": "5023fe10-fa29-11e9-93f8-49bdc5761ec6",
+                                    "toCommentReplyid": "1b9edcf0-fa29-11e9-93f8-49bdc5761ec6",
+                                    "replyContent": "你真的不告诉我？",
+                                    "uid": "13981e90-f70e-11e9-a6ec-6574e7c23858",
+                                    "type": "reply",
+                                    "userName": "abc",
+                                    "userPwd": "123456",
+                                    "replys":[]
+                                }
+                        ]
+                    }
+                ]   
+        },
+        {
+            "dynamicid": "0a959560-fa25-11e9-abc0-a3292aa30d64",
+            "uid": "13981e90-f70e-11e9-a6ec-6574e7c23858",
+            "userName": "abc",
+            "dynamicContent": "今天心情不好",
+            "userPwd": "123456",
+            "comments": [
+                {
+                    "commentReplyid": "5aceb160-fa25-11e9-abc0-a3292aa30d64",
+                    "uid": "3a366930-f78b-11e9-82f5-cb7496def3fd",
+                    "dynamicid": "0a959560-fa25-11e9-abc0-a3292aa30d64",
+                    "commentContent": "你钱丢了吗？",
+                    "type": "comment",
+                    "userName": "w916peach",
+                    "userPwd": "916521pp.",
+                    "replys": [
+                        {
+                            "commentReplyid": "c7a39330-0157-11ea-be9d-0575c9543ae0",
+                            "toCommentReplyid": "5aceb160-fa25-11e9-abc0-a3292aa30d64",
+                            "replyContent": "没丢啊",
+                            "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                            "type": "reply",
+                            "userName": "chenmanjie",
+                            "userPwd": "chenmanjie",
+                            "replys": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "dynamicid": "b8cdc8e0-0110-11ea-be9d-0575c9543ae0",
+            "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+            "userName": "chenmanjie",
+            "dynamicContent": "我的第一条朋友圈",
+            "userPwd": "chenmanjie",
+            "comments": [
+                {
+                    "commentReplyid": "321796e0-0111-11ea-be9d-0575c9543ae0",
+                    "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                    "dynamicid": "b8cdc8e0-0110-11ea-be9d-0575c9543ae0",
+                    "commentContent": "你是MM，还是GG",
+                    "type": "comment",
+                    "userName": "chenmanjie",
+                    "userPwd": "chenmanjie",
+                    "replys": []
+                },
+                {
+                    "commentReplyid": "8d8e57c0-0157-11ea-be9d-0575c9543ae0",
+                    "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                    "dynamicid": "b8cdc8e0-0110-11ea-be9d-0575c9543ae0",
+                    "commentContent": "我是GG",
+                    "type": "comment",
+                    "userName": "chenmanjie",
+                    "userPwd": "chenmanjie",
+                    "replys": [
+                        {
+                            "commentReplyid": "c1ae0050-0157-11ea-be9d-0575c9543ae0",
+                            "toCommentReplyid": "8d8e57c0-0157-11ea-be9d-0575c9543ae0",
+                            "replyContent": "我是GG",
+                            "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                            "type": "reply",
+                            "userName": "chenmanjie",
+                            "userPwd": "chenmanjie",
+                            "replys": []
+                        }
+                    ]
+                },
+                {
+                    "commentReplyid": "98665fd0-0157-11ea-be9d-0575c9543ae0",
+                    "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                    "dynamicid": "b8cdc8e0-0110-11ea-be9d-0575c9543ae0",
+                    "commentContent": "我是GG",
+                    "type": "comment",
+                    "userName": "chenmanjie",
+                    "userPwd": "chenmanjie",
+                    "replys": []
+                },
+                {
+                    "commentReplyid": "acc5d410-0157-11ea-be9d-0575c9543ae0",
+                    "uid": "75d86a80-feaf-11e9-af1c-ad8c1f6fc0dc",
+                    "dynamicid": "b8cdc8e0-0110-11ea-be9d-0575c9543ae0",
+                    "commentContent": "我是GG",
+                    "type": "comment",
+                    "userName": "chenmanjie",
+                    "userPwd": "chenmanjie",
+                    "replys": []
+                }
+            ]
+        }
+    ]
+}

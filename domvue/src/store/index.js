@@ -4,7 +4,7 @@ import Logger from 'vuex/dist/logger'
 
 Vue.use(Vuex)
 //引入模块
-import timeline from './modules/tiemline'
+import timeline from './modules/timeline'
 import replyModal from './modules/replymodal'
 
 export default new Vuex.Store({
