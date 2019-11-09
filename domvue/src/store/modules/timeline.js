@@ -1,11 +1,11 @@
-import {showDynamic} from '../../server/index'
+import {showDynamic,sendWord,sendPicWord} from '../../server/index'
 
 const state={
     list:[]
 }
 const mutations = {
     updateList(state, payload){
-        state.list = payload;
+        state.list = payload.reverse();
     }
 }
 
@@ -15,6 +15,12 @@ const actions = {
         let data = await showDynamic();
         console.log('data....', data);
         context.commit('updateList', data.data.data);
+    },
+
+    //发表朋友圈
+    async postTimeline({state,commit},payload){
+        let data =await sendWord({dynamicContent:payload});
+        console.log('postdata',data)
     }
 }
 export default{

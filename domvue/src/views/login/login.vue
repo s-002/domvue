@@ -37,6 +37,7 @@ export default {
           if(result&&result.data.code===1){
               //登录成功，执行后续跳转逻辑
               window.sessionStorage.setItem('isLogin', 'true');
+              console.log(this)
               this.$router.push('/')
           }
         //   alert(result.data.msg)
@@ -89,6 +90,7 @@ export default {
            height: 30px;
            background: #eee;
            border: 0;
+            font-size: .3rem;
        }
     }
     .linkrout{
@@ -101,5 +103,6 @@ export default {
         background:#f76968;
         border: 0;
         color: #fff;
+         font-size: .3rem;
     }
 </style>

@@ -1,7 +1,8 @@
 <!--  -->
 <template>
-    <div>
+    <div class="timeline">
         <div class="iptdiv">
+            <router-link to="/post" tag='span'>发表</router-link>
             <input type="text" name="" id="" placeholder="试试搜索你的好友名字">
         </div>
         <div class="center">
@@ -14,9 +15,7 @@
                     </div>
                 </div>
                 <div class="Tmain">
-                 {{item.dynamicContent}}                 
-                  <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
-                    <!-- <img class="image" src="../../assets/1.jpg" alt=""> -->
+                 {{item.dynamicContent}}   
                 </div>
                 <div class="Tfooter">
                     <p class="action">
@@ -78,22 +77,32 @@ export default {
 
 </script>
 <style lang='scss' scoped>
-    .iptdiv{
-        height: 40px;
-        line-height: 10px;
-        text-align: center;
-        input{
-            width: 87%;
-            background: #eee;
-            border:0;
-            height: 30px;
-            border-radius: 50px;
-            text-align: center;
-            outline: none;
-        }
+.iptdiv{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    span{
+        flex: 2;
+        font-size: .35rem;
     }
+    input{
+        flex: 8;
+        background: #eee;
+        border:0;
+        height: 30px;
+        margin-top:5px;
+        font-size: .3rem;
+        border-radius: 20px;
+        text-align: center;
+        outline: none;
+    }
+}
 .center{
-    margin: .2rem .3rem;
+    height: 560px;
+    overflow: scroll;
+    padding:.2rem .3rem;
     &>li{
         margin-bottom: .5rem;
     }

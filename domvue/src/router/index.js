@@ -6,6 +6,7 @@ import Login from '../views/login/login.vue'
 import Register from '../views/login/zhuce.vue'
 import Timeline from '../views/home/timeline'
 import My from '../views/home/my.vue'
+import Post from '../views/post.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,10 @@ const routes = [
       path: '/home/my', // 我的
       component: My
     }]
+  },
+  {
+    path:'/post',//发表朋友圈
+    component:Post,
   },
   {
     path: '/comment', // 评论

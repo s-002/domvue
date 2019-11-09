@@ -56,6 +56,7 @@ export default {
            height: 30px;
            background: #eee;
            border: 0;
+            font-size: .3rem;
        }
     }
     .regisbtn{
@@ -65,5 +66,6 @@ export default {
         background:#f76968;
         border: 0;
         color: #fff;
+         font-size: .3rem;
     }
 </style>
