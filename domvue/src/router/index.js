@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Nprogress from 'nprogress';
+import 'nprogress/nprogress.css';
 
 import Home from '../views/home/index.vue'
 import Login from '../views/login/login.vue'
@@ -76,6 +78,25 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+const whitelist=['/login','/register']
+router.beforeEach((to,from,naxt)=>{
+  Nprogress.start()
+  let islogin=window.sessionStorage.getItem('isLogin')
+  if(!islogin){
+    if(whitelist.indexOf(to.path)===-1){
+      Nprogress.done()
+      next('/login')
+    }else{
+      next()
+    }
+  }else{
+    next()
+  }
+})
+router.afterEach((to,from)=>{
+  Nprogress.done()
 })
 
 export default router
